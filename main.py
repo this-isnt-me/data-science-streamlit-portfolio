@@ -81,5 +81,18 @@ hdr22.markdown("###")
 hdr22.page_link("pages/4 Eurovision Voting Analysis.py", label="Link to Eurovision Voting Analysis Project")
 hdr22.markdown("###")
 
+hdr22.markdown("<h3 style='text-align: center; color: white;'>Mackenzie Scott Philanthropic Analysis</h3>",
+               unsafe_allow_html=True)
+hdr22.markdown('''In the past five years, MacKenzie Scott has risen to prominence in the US philanthropic community, 
+becoming one of its most influential figures. Following her divorce from Amazon founder Jeff Bezos in 2019, she signed 
+the Giving Pledge and expressed a desire to promptly distribute her wealth to empower charitable organizations. 
+Unlike many other large donors, Scott has shown a willingness to relinquish control over her donations. Despite still 
+ongoing giving, she has already granted over $15 billion to nearly 2,000 organizations through her organization Yield 
+Giving, revealing distinctive patterns in her approach. This analysis delves into the unprecedented scale and rapid 
+pace of her philanthropic endeavors by examining available donation information''')
+hdr22.markdown("###")
+hdr22.page_link("pages/5 Scott Mackenzie Donations.py", label="Link to Mackenzie Scott Philanthropic Analysis Project")
+hdr22.markdown("###")
+
 
 

@@ -214,3 +214,69 @@ def plot_network(input_dataframe,
         height=1000
     )
     return input_dataframe, fig, G, importance_df
+
+'''
+ARTS AND CULTURE
+Craft and traditional arts
+Creative youth development
+Cultural awareness
+Literary arts
+Multidisciplinary arts
+Museums
+Performing arts
+Public arts
+Visual arts
+DEMOCRATIC PROCESS
+Civic and social engagement
+Democracy
+ECONOMIC SECURITY AND OPPORTUNITY
+Access to housing and housing development
+Agricultural development
+Economic development
+Financial inclusion
+Livelihoods and workforce development
+EDUCATION
+Early learning
+Elementary, secondary education
+Postsecondary, tertiary education
+Vocational education
+Youth development
+ENVIRONMENT
+Biodiversity
+Climate change
+Environmental justice
+Natural resources conservation
+EQUITY AND JUSTICE
+Aging
+Caste
+Disability
+Faith and religion
+Gender identity
+Immigration or migration
+Incarceration and justice system involvement
+Race and ethnicity
+Sexual orientation
+FUNDING AND REGRANTING
+Fund
+Regrantor
+HEALTH
+Access to healthcare
+Active living
+Child development and welfare
+Chronic diseases
+Infectious and parasitic diseases
+Maternal and perinatal health
+Mental and behavioral health
+Nutrition and food security
+Public health, public health infrastructure
+Sexual and gender-based violence
+Sexual and reproductive health and justice
+Water access, sanitation, and hygiene
+NONPROFIT SECTOR
+Nonprofit sector strengthening
+Philanthropic sector strengthening
+ADDITIONAL AREAS
+Bridging divides
+Human rights
+Humanitarian assistance and relief
+'''
