@@ -3,6 +3,7 @@ import networkx as nx
 import plotly.express as px
 import pandas as pd
 import random
+import unicodedata
 
 
 def filter_countries(input_dataframe,
@@ -113,3 +114,24 @@ def clique_detection(network_graph):
     for index, clique in enumerate(cliques):
         cliques[index] = custom_join(list(clique))
     return cliques
+
+
+def clean_string(input_dict=None, key_list=None, upper=False):
+    for key in key_list:
+        input_text = input_dict.get(key, None)
+        if input_text:
+            text_string = ''.join(cat for cat in unicodedata.normalize('NFKD', input_text) if unicodedata.category(cat) != 'Mn')
+            text_string = " ".join(text_string.split())
+            for entry in [(",,",","), (" ,",","), ("  "," ")]:
+                text_string = text_string.replace(entry[0], entry[1])
+            if upper:
+                text_string = text_string.upper()
+            input_dict[key] = text_string.strip()
+    return input_dict
+
+
+def lookup_node_by_attribute(graph, attribute_name, attribute_value):
+    for node, data in graph.nodes(data=True):
+        if data.get(attribute_name) == attribute_value:
+            return node
+    return None
